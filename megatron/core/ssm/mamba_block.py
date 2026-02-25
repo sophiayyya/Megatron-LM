@@ -78,7 +78,7 @@ class MambaStack(GraphableMegatronModule, MegatronModule):
         submodules: MambaStackSubmodules,
         residual_in_fp32=False,
         pre_process: bool = True,
-        layer_type_list: list = None,
+        layer_type_list: Optional[list[str]] = None,
         pp_layer_offset: int = 0,
         post_layer_norm: bool = True,
         post_process: bool = True,
